@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-address</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mobile-footer-nav" transform="translate(-69.000000, -347.000000)" fill="#FFFFFF">
+            <g id="footer-nav">
+                <g id="quick-contact" transform="translate(69.000000, 253.000000)">
+                    <path d="M9.38170761,95.0513298 C9.46876129,94.8839189 9.4352791,94.6830258 9.30135037,94.5557935 C9.22099314,94.4687398 9.11385015,94.4285612 9.00001073,94.4285612 C8.93304636,94.4285612 8.866082,94.4419541 8.80581407,94.4754363 L0.234375279,98.7611557 C0.060267929,98.8482093 -0.0334821828,99.0491024 0.0133928731,99.2432991 C0.060267929,99.4374958 0.227678843,99.5714245 0.428571939,99.5714245 L4.28571939,99.5714245 L4.28571939,103.428572 C4.28571939,103.629465 4.41964813,103.796876 4.61384479,103.843751 C4.64732697,103.850447 4.68080915,103.857144 4.71429133,103.857144 C4.87500581,103.857144 5.02232742,103.77009 5.09598822,103.622769 L9.38170761,95.0513298 Z" id="icon-address"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

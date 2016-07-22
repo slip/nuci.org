@@ -33,9 +33,73 @@ h4.footer-nav-header
     list-style: none
     padding-left: 0
     margin: 0
+    li
+      i
+        margin-right: .5em
 
 @media screen and (min-width: 50em)
   .footer-nav
     width: 20%
     ul
       +font-size(1)
+
+.follow-us
+  +clearfix
+
+// icons
+.social-icons
+  +hide-text
+  margin: 1em
+  display: inline-block
+  height: 1.5em
+  width: 1.5em
+  background:
+    repeat: no-repeat
+
+.icon-facebook
+  @extend .social-icons
+  background:
+    image: url(/assets/img/icons/icon-facebook.svg)
+
+.icon-twitter
+  @extend .social-icons
+  background:
+    image: url(/assets/img/icons/icon-twitter.svg)
+
+.icon-flickr
+  @extend .social-icons
+  background:
+    image: url(/assets/img/icons/icon-flickr.svg)
+
+.icon-google-plus
+  @extend .social-icons
+  background:
+    image: url(/assets/img/icons/icon-google-plus.svg)
+
+.contact-icons
+  +hide-text
+  display: inline-block
+  height: 10px
+  width: 12px
+  background:
+    repeat: no-repeat
+
+.icon-email
+  @extend .contact-icons
+  background:
+    image: url(/assets/img/icons/icon-email.svg)
+
+.icon-phone
+  @extend .contact-icons
+  background:
+    image: url(/assets/img/icons/icon-phone.svg)
+
+.icon-fax
+  @extend .contact-icons
+  background:
+    image: url(/assets/img/icons/icon-fax.svg)
+
+.icon-address
+  @extend .contact-icons
+  background:
+    image: url(/assets/img/icons/icon-address.svg)

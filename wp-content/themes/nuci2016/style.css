@@ -872,6 +872,8 @@ h4.footer-nav-header {
     list-style: none;
     padding-left: 0;
     margin: 0; }
+    .site-info ul li i {
+      margin-right: .5em; }
 
 @media screen and (min-width: 50em) {
   .footer-nav {
@@ -879,6 +881,54 @@ h4.footer-nav-header {
     .footer-nav ul {
       font-size: 16px;
       font-size: 1rem; } }
+
+.follow-us {
+  content: "";
+  display: table;
+  table-layout: fixed; }
+
+.social-icons, .icon-facebook, .icon-twitter, .icon-flickr, .icon-google-plus {
+  overflow: hidden;
+  text-indent: -9000px;
+  display: block;
+  margin: 1em;
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  background-repeat: no-repeat; }
+
+.icon-facebook {
+  background-image: url(/assets/img/icons/icon-facebook.svg); }
+
+.icon-twitter {
+  background-image: url(/assets/img/icons/icon-twitter.svg); }
+
+.icon-flickr {
+  background-image: url(/assets/img/icons/icon-flickr.svg); }
+
+.icon-google-plus {
+  background-image: url(/assets/img/icons/icon-google-plus.svg); }
+
+.contact-icons, .icon-email, .icon-phone, .icon-fax, .icon-address {
+  overflow: hidden;
+  text-indent: -9000px;
+  display: block;
+  display: inline-block;
+  height: 10px;
+  width: 12px;
+  background-repeat: no-repeat; }
+
+.icon-email {
+  background-image: url(/assets/img/icons/icon-email.svg); }
+
+.icon-phone {
+  background-image: url(/assets/img/icons/icon-phone.svg); }
+
+.icon-fax {
+  background-image: url(/assets/img/icons/icon-fax.svg); }
+
+.icon-address {
+  background-image: url(/assets/img/icons/icon-address.svg); }
 
 .navbar-header {
   margin: 1em .25em 2em .25em; }
