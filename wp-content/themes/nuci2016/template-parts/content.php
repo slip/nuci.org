@@ -13,35 +13,40 @@
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) {
-				the_title( '<h1 class="entry-title">', '</h1>' );
+				the_title( '<h2 class="entry-title">', '</h1>' );
 			} else {
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			}
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php helping_prevent_suicide_posted_on(); ?>
+			<?php nuci2016_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'helping-prevent-suicide' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
+    <div class="ns-post-content-wrapper">
+      <div class="ns-post-content">
+  		<?php
+  			the_content( sprintf(
+  				/* translators: %s: Name of current post. */
+  				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'nuci2016' ), array( 'span' => array( 'class' => array() ) ) ),
+  				the_title( '<span class="screen-reader-text">"', '"</span>', false )
+  			) );
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'helping-prevent-suicide' ),
-				'after'  => '</div>',
-			) );
-		?>
+  			wp_link_pages( array(
+  				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'nuci2016' ),
+  				'after'  => '</div>',
+  			) );
+  		?>
+      </div><!-- .ns-post-content -->
+    </div><!-- .ns-post-content-wrapper -->
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php helping_prevent_suicide_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	<!-- <footer class="entry-footer">
+		<?php nuci2016_entry_footer(); ?>
+	</footer> -->
+  <!-- .entry-footer -->
 </article><!-- #post-## -->

@@ -15,9 +15,42 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'helping-prevent-suicide' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'helping-prevent-suicide' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'helping-prevent-suicide' ), 'helping-prevent-suicide', '<a href="http://www.resolutionathens.com" rel="designer">Ian Kennedy</a>' ); ?>
+      <div class="footer-nav">
+      <h4 class="footer-nav-header">More</h4>
+        <ul>
+          <li>Blog</li>
+          <li>Calendar</li>
+          <li>Contact</li>
+          <li>Our Sponsors</li>
+          <li>Legal</li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4 class="footer-nav-header">Campaigns</h4>
+        <ul>
+          <li>Ath Business Rocks</li>
+          <li>Autumn on the Hill</li>
+          <li>Nuci+1 Pass</li>
+          <li>Rock'N'Raffle</li>
+          <li>The Steeple</li>
+        </ul>
+      </div>      
+      <div class="footer-nav">
+        <h4 class="footer-nav-header">Programs</h4>
+        <ul>
+          <li>Camp Amped</li>
+          <li>Health & Wellness</li>
+          <li>Musician's Services</li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4 class="footer-nav-header">Shop</h4>
+        <ul>
+          <li>Merch</li>
+          <li>Rewired</li>
+          <li>Auction</li>
+        </ul>
+      </div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

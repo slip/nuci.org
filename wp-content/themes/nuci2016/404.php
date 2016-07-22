@@ -14,11 +14,11 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'helping-prevent-suicide' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'nuci2016' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'helping-prevent-suicide' ); ?></p>
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'nuci2016' ); ?></p>
 
 					<?php
 						get_search_form();
@@ -26,11 +26,11 @@ get_header(); ?>
 						the_widget( 'WP_Widget_Recent_Posts' );
 
 						// Only show the widget if site has multiple categories.
-						if ( helping_prevent_suicide_categorized_blog() ) :
+						if ( nuci2016_categorized_blog() ) :
 					?>
 
 					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'helping-prevent-suicide' ); ?></h2>
+						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'nuci2016' ); ?></h2>
 						<ul>
 						<?php
 							wp_list_categories( array(
@@ -48,7 +48,7 @@ get_header(); ?>
 						endif;
 
 						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'helping-prevent-suicide' ), convert_smilies( ':)' ) ) . '</p>';
+						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'nuci2016' ), convert_smilies( ':)' ) ) . '</p>';
 						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 
 						the_widget( 'WP_Widget_Tag_Cloud' );

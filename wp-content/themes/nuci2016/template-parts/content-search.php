@@ -15,7 +15,7 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php helping_prevent_suicide_posted_on(); ?>
+			<?php nuci2016_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -25,6 +25,6 @@
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php helping_prevent_suicide_entry_footer(); ?>
+		<?php nuci2016_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

@@ -1,0 +1,41 @@
+.give-form
+  margin: 0 auto 0 auto !important
+
+.give-form-wrap
+  width: 100%
+  text-align: center
+  margin-top: 1.5em
+  h2
+    color: $ns-dk-gray
+    +font-size(1.125)
+    line-height: 1rem
+  p
+    color: $ns-dk-gray
+    +font-size(.88)
+
+  @media screen and (min-width: 50em)
+    h2
+      +font-size(1.75)
+    p
+      +font-size(1)
+
+.give-textfield
+  margin-top: 1.5em
+  height: calc(3em - 1px)
+  width: 60%
+  max-width: 20em
+  padding: .5em
+  border: none
+  border-radius: .25em
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif
+  font-size: 12px
+  color: $ns-dk-gray
+
+  @media screen and (min-width: 50em)
+    max-width: 30em
+    width: 30em
+
+
+  &:active,
+  &:focus
+    outline-color: $ns-lt-blue

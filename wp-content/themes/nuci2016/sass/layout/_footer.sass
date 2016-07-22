@@ -1,0 +1,41 @@
+.site-footer
+  color: #fff
+  background:
+    image: -webkit-linear-gradient(rgba(40,40,40,0.00) 0%, rgba(40,40,40,0.80) 100%)
+    image: -o-linear-gradient(rgba(40,40,40,0.00) 0%, rgba(40,40,40,0.80) 100%)
+    image: linear-gradient(rgba(40,40,40,0.00) 0%, rgba(40,40,40,0.80) 100%)
+  padding: 1em
+  margin-top: 1.5em
+
+
+.footer-nav
+  width: 40%
+  margin-bottom: 1em
+
+h4.footer-nav-header
+  color: #fff
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif
+  +font-size(.88)
+  font-weight: bold
+  text-align: center
+  text-transform: uppercase
+
+.site-info
+  text-align: center
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  ul
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif
+    +font-size(.75)
+    font-weight: 400
+    text-transform: uppercase
+    list-style: none
+    padding-left: 0
+    margin: 0
+
+@media screen and (min-width: 50em)
+  .footer-nav
+    width: 20%
+    ul
+      +font-size(1)

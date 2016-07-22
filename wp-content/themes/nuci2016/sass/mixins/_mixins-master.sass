@@ -1,0 +1,25 @@
+// Rem output with px fallback
+=font-size($sizeValue: 1)
+  font-size: $sizeValue * 16 * 1px
+  font-size: $sizeValue * 1rem
+
+// Center block
+=center-block
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+// Clearfix
+=clearfix
+  content: ""
+  display: table
+  table-layout: fixed
+
+// Clear after (not all clearfix need this also)
+=clearfix-after
+  clear: both
+
+=box-shadow($horizontal: 0px, $vertical: 5px, $blur: 10px, $color: rgba(0, 0, 0, 0.25))
+  -webkit-box-shadow: $horizontal $vertical $blur $color
+  -moz-box-shadow: $horizontal $vertical $blur $color
+  box-shadow: $horizontal $vertical $blur $color

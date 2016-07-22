@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="154px" height="154px" viewBox="0 0 154 154" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>nuci-logo-mobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mobile-header-nav" transform="translate(-67.000000, -48.000000)">
+            <g id="nuci-logo-mobile" filter="url(#filter-1)" transform="translate(69.000000, 49.000000)">
+                <circle id="Oval-3" fill="#FFFFFF" cx="77.238806" cy="75" r="70.5223881"></circle>
+                <path d="M93.87684,45.8578319 L83.6574364,45.8578319 C73.7390326,45.8578319 68.4791079,51.5681553 68.4791079,60.5852329 C68.4791079,69.6015718 73.7390326,75.4631339 83.6574364,75.4631339 L93.87684,75.4631339 L93.87684,97.1031969 L79.4499029,97.1031969 C78.8030304,97.1031969 78.1561579,97.0825147 77.5096548,97.0457668 L72.9876412,104.466805 C74.7908698,104.015859 76.744783,103.865913 78.5480116,103.865913 C85.1602193,103.865913 93.1254486,107.773005 93.1254486,115.287114 C93.1254486,125.505976 81.4038161,129.864014 72.8376953,129.864014 C66.3754335,129.864014 60.0634869,127.910837 54.2026707,125.505976 L57.358921,118.593314 C61.2660087,119.945598 65.9243032,121.748829 70.2830752,121.748829 C75.0918696,121.748829 78.097066,119.04426 78.097066,115.73806 C78.097066,113.032936 74.1899782,110.778575 70.8839667,110.778575 C68.9300536,110.778575 67.4272707,111.680652 65.6238574,112.281544 L61.8669002,108.674898 L69.6339868,95.682587 C55.979308,91.6759614 44.4342128,79.3377258 44.4342128,60.5852329 C44.4342128,37.5921467 62.0174001,24.0665303 79.4499029,24.0665303 L93.87684,24.0665303 L93.87684,45.8578319 Z M75.0000923,0 C33.5786471,0 0,33.5786885 0,75 C0,116.421496 33.5786471,150 75.0000923,150 C116.421353,150 150,116.421496 150,75 C150,33.5786885 116.421353,0 75.0000923,0 L75.0000923,0 Z" id="Fill-25" fill="#547AA3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

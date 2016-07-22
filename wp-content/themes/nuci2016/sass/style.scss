@@ -1,5 +1,5 @@
 /*!
-Theme Name: nuci2016
+Theme Name: nuci.org 2016
 Theme URI: http://underscores.me/
 Author: Ian Kennedy
 Author URI: http://www.resolutionathens.com
@@ -7,7 +7,7 @@ Description: Nuci\'s Space 2016
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: helping-prevent-suicide
+Text Domain: nuci2016
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
@@ -46,9 +46,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "mixins/mixins-master";
 
 /*--------------------------------------------------------------
-# Normalize
+# Reset and Normalize
 --------------------------------------------------------------*/
 @import "normalize";
+@import "reset";
+
 
 /*--------------------------------------------------------------
 # Typography
@@ -59,6 +61,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Elements
 --------------------------------------------------------------*/
 @import "elements/elements";
+@import "variables-site/shadows";
 
 /*--------------------------------------------------------------
 # Forms
@@ -71,21 +74,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "navigation/navigation";
 
 /*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-@import "modules/accessibility";
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-@import "modules/alignments";
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-@import "modules/clearings";
-
-/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 @import "site/secondary/widgets";
@@ -96,11 +84,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "site/site";
 
 /*--------------------------------------------------------------
-# Infinite scroll
+# Modules
 --------------------------------------------------------------*/
-@import "modules/infinite-scroll";
+@import "modules/modules";
 
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+@import "layout/layout";
