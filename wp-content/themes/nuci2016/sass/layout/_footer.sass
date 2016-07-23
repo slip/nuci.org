@@ -19,6 +19,7 @@ h4.footer-nav-header
   font-weight: bold
   text-align: center
   text-transform: uppercase
+  margin-bottom: .25em
 
 .site-info
   text-align: center
@@ -42,6 +43,9 @@ h4.footer-nav-header
     width: 20%
     ul
       +font-size(1)
+  h4.footer-nav-header
+    +font-size(1.25)
+    margin-bottom: .5em
 
 .follow-us
   +clearfix
@@ -55,6 +59,10 @@ h4.footer-nav-header
   width: 1.5em
   background:
     repeat: no-repeat
+    size: cover
+  @media screen and (min-width: 50em)
+    height: 3em
+    width: 3em
 
 .icon-facebook
   @extend .social-icons

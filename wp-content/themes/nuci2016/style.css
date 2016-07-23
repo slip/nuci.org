@@ -856,7 +856,8 @@ h4.footer-nav-header {
   font-size: 0.88rem;
   font-weight: bold;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: .25em; }
 
 .site-info {
   text-align: center;
@@ -880,7 +881,11 @@ h4.footer-nav-header {
     width: 20%; }
     .footer-nav ul {
       font-size: 16px;
-      font-size: 1rem; } }
+      font-size: 1rem; }
+  h4.footer-nav-header {
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-bottom: .5em; } }
 
 .follow-us {
   content: "";
@@ -895,7 +900,12 @@ h4.footer-nav-header {
   display: inline-block;
   height: 1.5em;
   width: 1.5em;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media screen and (min-width: 50em) {
+    .social-icons, .icon-facebook, .icon-twitter, .icon-flickr, .icon-google-plus {
+      height: 3em;
+      width: 3em; } }
 
 .icon-facebook {
   background-image: url(/assets/img/icons/icon-facebook.svg); }
