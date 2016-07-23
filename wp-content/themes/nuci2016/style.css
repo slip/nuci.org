@@ -1069,22 +1069,23 @@ h4.footer-nav-header {
     -moz-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); }
 
-.site-main {
+.site-main-not-front {
   display: flex; }
-  .site-main article {
-    width: 75%; }
-  .site-main aside {
+  .site-main-not-front article {
+    width: 75%;
+    padding: 1em; }
+  .site-main-not-front aside {
     width: 25%;
     font-size: 14.08px;
     font-size: 0.88rem; }
 
 @media (max-width: 28em) {
-  .site-main {
+  .site-main-not-front {
     display: block; }
-    .site-main article {
+    .site-main-not-front article {
       width: 100%;
-      background: pink; }
-    .site-main aside {
+      padding: 1em; }
+    .site-main-not-front aside {
       visibility: hidden; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+// sidbar & content for top level pages
+.site-main-not-front
+  display: flex
+  article
+    width: 75%
+    padding: 1em
+  aside
+    width: 25%
+    +font-size(.88)
+
+@media(max-width: 28em)
+  .site-main-not-front
+    display: block
+    article
+      width: 100%
+      padding: 1em
+    aside
+      visibility: hidden
