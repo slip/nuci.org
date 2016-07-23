@@ -36,3 +36,21 @@
     // border: 1px solid $ns-dk-gray
     +box-shadow(0px, 4px, 8px, $color: rgba(0, 0, 0, 0.15))
     // background: $ns-lt-blue
+
+// page.php
+.site-main
+  display: flex
+  article
+    width: 75%
+  aside
+    width: 25%
+    +font-size(.88)
+
+@media(max-width: 28em)
+  .site-main
+    display: block
+    article
+      width: 100%
+      background: pink
+    aside
+      visibility: hidden

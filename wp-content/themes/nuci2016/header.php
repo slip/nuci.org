@@ -46,9 +46,9 @@ body_class();
     <div class="navbar-header">
       <!-- main nav buttons -->
       <div class="navbar-main-buttons">
-        <button class="header-main-button ns-red-btn" type="button" name="get-help-btn">Get Help</button>
-        <button class="header-main-button ns-green-btn" type="button" name="help-us-btn">Help Us</button>
-        <button class="header-main-button ns-blue-btn" type="button" name="about-us-btn">About Us</button>
+        <a class="header-main-button ns-red-btn" href="/get-help/" type="button" name="get-help-btn">Get Help</a>
+        <a class="header-main-button ns-green-btn" href="/help-us/" type="button" name="help-us-btn">Help Us</a>
+        <a class="header-main-button ns-blue-btn" href="/about-us/" type="button" name="about-us-btn">About Us</a>
       </div>
       <!-- hamburger menu -->
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".exCollapsingNavbar">

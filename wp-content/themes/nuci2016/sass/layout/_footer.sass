@@ -34,6 +34,12 @@ h4.footer-nav-header
     list-style: none
     padding-left: 0
     margin: 0
+    a
+      text-decoration: none
+      color: #fff
+      &:hover
+        text-decoration: underline
+        color: $ns-blue
     li
       i
         margin-right: .5em
@@ -111,3 +117,19 @@ h4.footer-nav-header
   @extend .contact-icons
   background:
     image: url(/assets/img/icons/icon-address.svg)
+
+.copyright
+  padding: 1em
+  display: flex
+  justify-content: space-between
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif
+  +font-size(.75)
+  font-weight: 400
+  text-transform: uppercase
+  a
+    color: #fff
+    text-decoration: none
+    &:visited
+      color: #fff
+    &:hover
+      text-decoration: underline

@@ -1,4 +1,5 @@
 button,
+a[type="button"],
 input[type="button"],
 input[type="reset"],
   color: #fff
@@ -8,12 +9,17 @@ input[type="reset"],
   +font-size(.75)
   font-weight: bold
   text-transform: uppercase
+  text-decoration: none
   padding: .25em 1em
 
   &:hover
-
+    text-decoration: underline
   &:active,
   &:focus
+    text-decoration: underline
+
+  &:visited
+    color: #fff
 
 .header-main-button
   height: 25px
@@ -23,16 +29,19 @@ input[type="reset"],
   background-image: -webkit-linear-gradient(bottom, #73251F 0%, #B93A32 65%)
   background-image: -o-linear-gradient(bottom, #73251F 0%, #B93A32 65%)
   background-image: linear-gradient(to top, #73251F 0%, #B93A32 65%)
+  +box-shadow(0,2px,2px,rgba(0, 0, 0, 0.5))
 
 .ns-green-btn
   background-image: -webkit-linear-gradient(bottom, #00402F 0%, #006E51 53%)
   background-image: -o-linear-gradient(bottom, #00402F 0%, #006E51 53%)
   background-image: linear-gradient(to top, #00402F 0%, #006E51 53%)
+  +box-shadow(0,2px,2px,rgba(0, 0, 0, 0.5))
 
 .ns-blue-btn
   background-image: -webkit-linear-gradient(89deg, #547AA3 24%, #31475E 100%)
   background-image: -o-linear-gradient(89deg, #547AA3 24%, #31475E 100%)
   background-image: linear-gradient(179deg, #547AA3 24%, #31475E 100%)
+  +box-shadow(0,2px,2px,rgba(0, 0, 0, 0.5))
 
 .navbar-toggle
   align-self: flex-end
@@ -42,8 +51,9 @@ input[type="reset"],
   margin-right: 1rem
 
 .textfield-btn
+  position: relative
   height: 3em
-  margin-left: -0.8em
+  margin-left: -0.5em
   border: none
   border-top-right-radius: .25em
   border-bottom-right-radius: .25em

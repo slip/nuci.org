@@ -26,6 +26,7 @@ get_header(); ?>
 				if ( comments_open() || get_comments_number() ) :
 					comments_template();
 				endif;
+        get_sidebar();
 
 			endwhile; // End of the loop.
 			?>
@@ -34,5 +35,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
