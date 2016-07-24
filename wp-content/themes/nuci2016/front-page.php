@@ -58,32 +58,32 @@ get_header(); ?>
           endforeach;
           wp_reset_postdata();
         ?>
-
-        <div class="post-cards">
-        <?php
-          $args = array(
-            'posts_per_page' => 3,
-            'order' => 'DSC',
-            'orderby' => 'date',
-            'category' => '-193'
-          );
-          $postslist = get_posts($args);
-          foreach ($postslist as $post):
-            setup_postdata($post);
-        ?>
-          <div class="post-card">
-            <div class="card-image">
-              <a href="<?php the_permalink();?>"><img src="<?php if (has_post_thumbnail()) {the_post_thumbnail_url();}?>" alt=""></a>
+        <div class="post-cards-wrapper">
+          <div class="post-cards">
+          <?php
+            $args = array(
+              'posts_per_page' => 3,
+              'order' => 'DSC',
+              'orderby' => 'date',
+              'category' => '-193'
+            );
+            $postslist = get_posts($args);
+            foreach ($postslist as $post):
+              setup_postdata($post);
+          ?>
+            <div class="post-card">
+              <div class="card-image">
+                <a href="<?php the_permalink();?>"><img src="<?php if (has_post_thumbnail()) {the_post_thumbnail_url();}?>" alt=""></a>
+              </div>
+              <div class="card-copy"><h4><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
+              <?php the_excerpt();?></div>
             </div>
-            <div class="card-copy"><h4><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
-            <?php the_excerpt();?></div>
-          </div>
-        <?php
-          endforeach;
-          wp_reset_postdata();
-        ?>
-      </div>
-
+          <?php
+            endforeach;
+            wp_reset_postdata();
+          ?>
+        </div><!-- .post-cards -->
+      </div><!-- .post-cards-wrapper -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
