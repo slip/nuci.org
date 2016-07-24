@@ -548,7 +548,7 @@ a {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5em; }
+  margin: 0; }
 
 .byline,
 .updated:not(.published) {
@@ -663,6 +663,25 @@ section {
     section {
       padding: 2em 2em; } }
 
+.section-header {
+  background: #736f78;
+  margin: -1.5em -1em 1.5em -1em;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25); }
+  .section-header h2 {
+    color: #fff; }
+  .section-header.blue {
+    background: #547aa3; }
+  .section-header.red {
+    background: #b93a32; }
+  @media (min-width: 28em) {
+    .section-header {
+      margin: -2em -2em 2em -2em; } }
+
 .section-text {
   margin-left: auto;
   margin-right: auto;
@@ -700,13 +719,15 @@ section {
 
 .talk-to-us-content {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .talk-to-us-image {
-  width: 25%; }
+  width: 25%;
+  max-width: 150px; }
 
 .talk-to-us-text {
-  width: 75%; }
+  width: 70%; }
   .talk-to-us-text h2 {
     display: inline-block; }
 
@@ -1058,6 +1079,12 @@ h4.footer-nav-header {
 .icon-google-plus {
   background-image: url(/assets/img/icons/icon-google-plus.svg); }
 
+.icon-crisis {
+  margin-right: 1em;
+  width: 50px;
+  height: 50px;
+  background-image: url(/assets/img/icons/crisis-icon.svg); }
+
 .contact-icons, .icon-email, .icon-phone, .icon-fax, .icon-address {
   overflow: hidden;
   text-indent: -9000px;
@@ -1190,5 +1217,8 @@ h4.footer-nav-header {
 
 .text-align-left {
   text-align: left; }
+
+.text-align-center {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

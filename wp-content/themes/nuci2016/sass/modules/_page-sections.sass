@@ -4,10 +4,27 @@ article
 section
   padding: 1.5em 1em
   margin-top: 1.5em
+  // margin-bottom: 0
   +box-shadow
 
   @media(min-width: 28em)
     padding: 2em 2em
+
+.section-header
+  background: $ns-dk-gray
+  margin: -1.5em -1em 1.5em -1em
+  padding: 1em
+  display: flex
+  justify-content: center
+  +box-shadow
+  h2
+    color: #fff
+  &.blue
+    background: $ns-blue
+  &.red
+    background: $ns-red
+  @media(min-width: 28em)
+    margin: -2em -2em 2em -2em
 
 .section-text
   margin-left: auto
@@ -17,6 +34,7 @@ section
 
 .full-width-bg
   width: 100%
+
   text-align: center
   &.blue
     background:
@@ -56,11 +74,14 @@ section
 .talk-to-us-content
   display: flex
   flex-wrap: wrap
+  justify-content: center
 
 .talk-to-us-image
   width: 25%
+  max-width: 150px
+
 
 .talk-to-us-text
-  width: 75%
+  width: 70%
   h2
     display: inline-block
