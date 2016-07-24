@@ -1,14 +1,19 @@
-section
-  padding: 1em 1em
-  margin-top: 1.5em
+article
+  padding: 0
 
-  & .section-text
-    margin-left: auto
-    margin-right: auto
-    max-width: 40em
+section
+  padding: 1.5em 1em
+  margin-top: 1.5em
+  +box-shadow
 
   @media(min-width: 28em)
     padding: 2em 2em
+
+.section-text
+  margin-left: auto
+  margin-right: auto
+  width: 90%
+  +max-width(62.5)
 
 .full-width-bg
   width: 100%
@@ -16,9 +21,46 @@ section
   &.blue
     background:
       color: $ns-blue
+    h1, h2, h3, p, a
+      color: #fff
+
+  &.lt-blue
+    background:
+      color: $ns-lt-blue
     h1, h2, h3, p
       color: #fff
 
   &.lt-gray
     background:
       color: $ns-lt-gray
+
+  &.dk-gray
+    background:
+      color: $ns-dk-gray
+    h1, h2, h3, p, a
+      color: #fff
+
+  &.red
+    background:
+      color: $ns-red
+    h1, h2, h3, p, a
+      color: #fff
+
+.talk-to-us
+  width: 100%
+  text-align: center
+  background: $ns-lt-blue
+  h1, h2, h3, p, a
+    color: #fff
+
+.talk-to-us-content
+  display: flex
+  flex-wrap: wrap
+
+.talk-to-us-image
+  width: 25%
+
+.talk-to-us-text
+  width: 75%
+  h2
+    display: inline-block

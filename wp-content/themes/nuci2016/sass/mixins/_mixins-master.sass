@@ -19,7 +19,7 @@
 =clearfix-after
   clear: both
 
-=box-shadow($horizontal: 0px, $vertical: 5px, $blur: 10px, $color: rgba(0, 0, 0, 0.25))
+=box-shadow($horizontal: 0px, $vertical: 2px, $blur: 5px, $color: rgba(0, 0, 0, 0.25))
   -webkit-box-shadow: $horizontal $vertical $blur $color
   -moz-box-shadow: $horizontal $vertical $blur $color
   box-shadow: $horizontal $vertical $blur $color
@@ -28,3 +28,12 @@
   overflow: hidden
   text-indent: -9000px
   display: block
+
+=rounded-image($border-color: $ns-blue)
+  width: calc(100vw/4)
+  max-width: 150px
+  border-radius: 50%
+  border: 2px solid $border-color
+
+=max-width($width)
+  max-width: $width * 1em
