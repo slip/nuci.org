@@ -61,32 +61,6 @@ body_class();
     </div>
     <!-- nuci's space logo -->
     <a href="/"><img class="header-main-logo" src="/assets/img/nuci-logo-mobile.svg" alt="Nuci's Space" /></a>
-    <?php if (is_front_page()) : ?>
-    <div id="give-form-1736-wrap" class="give-form-wrap">
-      <h2>Join Our Monthly Giving Program</h2>
-      <p>Your Donation Helps Prevent Suicide</p>
-      <form id="give-form-1736" class="give-form give-form-1736 " action="http://ians-mac-pro.lan:5757/?payment-mode=manual" method="post">
-        <input type="hidden" name="give-form-id" value="1736">
-        <input type="hidden" name="give-form-title" value="Header Form">
-        <input type="hidden" name="give-current-url" value="http://ians-mac-pro.lan:5757/">
-        <input type="hidden" name="give-form-url" value="http://ians-mac-pro.lan:5757/">
-        <input type="hidden" name="give-form-minimum" value="5.00">
-
-        <!-- The following field is for robots only, invisible to humans: -->
-        <span class="give-hidden" style="display: none !important;">
-        <label for="give-form-honeypot-1736"></label>
-        <input id="give-form-honeypot-1736" type="text" name="give-honeypot" class="give-honeypot give-hidden">
-        </span>
-
-        <input id="give-amount" class="give-textfield" name="give-amount" type="tel" placeholder="" value="20.00" autocomplete="off">
-        <input type="hidden" name="give-user-id" value="1">
-        <input type="hidden" name="give_action" value="purchase">
-        <input type="hidden" name="give-gateway" value="manual">
-
-        <input type="submit" class="ns-blue-btn textfield-btn" id="give-purchase-button" name="give-purchase" value="Donate Now">
-      </form>
-    </div><!--end #give-form-1736-->
-  <?php endif; ?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -30,7 +30,7 @@ section
   margin-left: auto
   margin-right: auto
   width: 90%
-  +max-width(62.5)
+  +max-width(48)
 
 .full-width-bg
   width: 100%
@@ -64,24 +64,37 @@ section
     h1, h2, h3, p, a
       color: #fff
 
+// talk to us sections
+
 .talk-to-us
   width: 100%
   text-align: center
   background: $ns-lt-blue
   h1, h2, h3, p, a
     color: #fff
+  &.dk-gray
+    background: $ns-dk-gray
 
 .talk-to-us-content
+  margin-left: auto
+  margin-right: auto
   display: flex
   flex-wrap: wrap
+  align-items: center
   justify-content: center
+  width: 95%
+  max-width: 45em
 
 .talk-to-us-image
-  width: 25%
-  max-width: 150px
-
+  width: 28%
+  // min-width: 100px
 
 .talk-to-us-text
-  width: 70%
+  width: 65%
+  padding: .25em
   h2
     display: inline-block
+
+@media(min-width: 28em)
+  .talk-to-us-content
+    // justify-content: center
