@@ -1,43 +1,104 @@
-.give-form
-  margin: 0 auto 0 auto !important
+#give-form-1736-wrap
+  *
+    margin: 0
+    padding: 0
+    clear: none
 
-.give-form-wrap
-  width: 100%
   text-align: center
-  margin-top: 1.5em
   h2
     color: $ns-dk-gray
     +font-size(1.125)
-    line-height: 1rem
   p
     color: $ns-dk-gray
     +font-size(.88)
 
   @media screen and (min-width: 50em)
+    margin-top: 1.5em
     h2
       +font-size(1.75)
+      line-height: normal
     p
       +font-size(1)
 
-.give-textfield
+
+#give-form-1736
+  margin: 1em 1em 0 1em
+
+  .give-total-wrap
+    display: inline-block
+
+  .give-currency-symbol
+    display: none
+
+  .give-amount-top
+
+  .give-btn
+    @extend .ns-blue-btn
+    color: #fff
+    position: relative
+    height: 3em
+    margin-left: -0.5em
+    border: none
+    border-top-right-radius: .25em
+    border-bottom-right-radius: .25em
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif
+    +font-size(.75)
+    font-weight: bold
+    text-transform: uppercase
+    padding: .25em 1em
+
+    &:hover
+      text-decoration: underline
+    &:active,
+    &:focus
+      text-decoration: underline
+
+    &:visited
+      color: #fff
+      margin: 0 !important
+
+#give-amount
+  float: none !important
   position: relative
-  top: 1px
-  margin-top: 1.5em
-  height: calc(3em + 2px)
-  width: 60%
+  top: 1.5px
+  width: 250px
   max-width: 20em
   padding: .5em 1em
-  border: none
-  border-radius: .25em
+  border: none !important
+  border-radius: .25em !important
   font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif
-  font-size: 12px
-  color: $ns-dk-gray
-
-  @media screen and (min-width: 50em)
-    max-width: 30em
-    width: 30em
-
+  color: $ns-gray
 
   &:active,
   &:focus
     outline-color: $ns-lt-blue
+
+input#give-amount-text
+  padding: .5em 1em
+  border: none
+  border-radius: .25em
+
+#give-email
+  border: 1px solid
+
+.give-input
+  border-radius: .25em !important
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif
+  border: 1px solid $ns-gray !important
+  background: #FFF
+  border-radius: 0
+  height: 35px
+  line-height: 35px
+  padding: .5em 1em !important
+  margin: 0
+  font-size: 12px
+
+#give-purchase-button
+  border-radius: .25em !important
+  margin-left: 0 !important
+
+.give-submit-button-wrap
+  margin-left: auto !important
+  margin-right: auto !important
