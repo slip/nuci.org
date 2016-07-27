@@ -728,6 +728,7 @@ section {
 
 .full-width-bg {
   width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
   text-align: center; }
   .full-width-bg.blue {
     background-color: #547aa3; }
@@ -751,7 +752,8 @@ section {
 .talk-to-us {
   width: 100%;
   text-align: center;
-  background: #92b6d5; }
+  background: #92b6d5;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25); }
   .talk-to-us h1, .talk-to-us h2, .talk-to-us h3, .talk-to-us p, .talk-to-us a {
     color: #fff; }
   .talk-to-us.dk-gray {
@@ -1304,6 +1306,20 @@ h4.footer-nav-header {
       padding: 0em; }
     .site-main-not-front aside {
       visibility: hidden; } }
+
+.site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh; }
+  .site #content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
 
 .float-left {
   float: left;
