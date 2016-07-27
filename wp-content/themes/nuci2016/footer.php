@@ -39,7 +39,7 @@
         <h4 class="footer-nav-header">Programs</h4>
         <ul>
           <a href="#"><li>Camp Amped</li></a>
-          <a href="#"><li>Health &amp; Wellness</li></a>
+          <a href="/health-and-wellness/"><li>Health &amp; Wellness</li></a>
           <a href="#"><li>Musician's Services</li></a>
         </ul>
       </div>

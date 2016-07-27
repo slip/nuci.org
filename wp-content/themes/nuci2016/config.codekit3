@@ -12,57 +12,57 @@
 "files": {
 	"\/404.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/404.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/archive.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/archive.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/codekit3.config": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/codekit3.config",
-		"oF": 0
+		"oF": 1
 		},
 	"\/comments.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/comments.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/config.codekit3": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/config.codekit3",
-		"oF": 0
+		"oF": 1
 		},
 	"\/footer.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/footer.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/front-page.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/front-page.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/functions.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/functions.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/header.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/header.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/inc\/custom-header.php": {
 		"ft": 8192,
@@ -96,9 +96,9 @@
 		},
 	"\/index.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/index.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/customizer.js": {
 		"ft": 64,
@@ -157,9 +157,9 @@
 		},
 	"\/page.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/page.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/README.md": {
 		"cS": 0,
