@@ -28,7 +28,7 @@ bloginfo('charset');
 <link rel="pingback" href="<?php
 bloginfo('pingback_url');
 ?>">
-<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Montserrat:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Source+Sans+Pro:400,700|Roboto+Condensed:400,700" rel="stylesheet">
 
 
 <?php
@@ -40,6 +40,7 @@ wp_head();
 body_class();
 ?>>
 <div id="page" class="site">
+  <div id="header-image"></div>
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e('Skip to content', 'nuci2016');?></a>
 
 	<header id="masthead" class="site-header" role="banner">

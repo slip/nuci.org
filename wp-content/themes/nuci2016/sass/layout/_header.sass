@@ -13,15 +13,34 @@
   justify-content: flex-end
   align-items: baseline
 
+#header-image
+  display: none
+
 @media screen and (min-width: 50em)
+  #header-image
+    display: block
+    position: fixed
+    top: 0
+    left: 0
+    height: 400px
+    max-height: 400px
+    width: 100%
+    z-index: -1
+    background:
+      image: url(/assets/img/headers/header-watercolor.png)
+      size: cover
+      position: top center
+      repeat: no-repeat
+
   .header-main-logo
     margin-top: -3em
     margin-left: 2em
     margin-bottom: 0
+
   .site-header
     background:
-      image: url(/assets/img/headers/header-watercolor.png)
+      // image: url(/assets/img/headers/header-watercolor.png)
       size: cover
       position: bottom center
       repeat: no-repeat
-      // image: linear-gradient(rgba(40,40,40,0.40) 0%, rgba(40,40,40,0.00) 80%)
+      image: linear-gradient(rgba(255,255,255,0.40) 0%, rgba(255,255,255,0.00) 80%)

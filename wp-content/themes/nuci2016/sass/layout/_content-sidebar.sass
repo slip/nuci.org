@@ -1,19 +1,43 @@
-.content-area
-	float: left
-	margin: 0 (-$size__site-sidebar) 0 0
-	width: $size__site-main
+.single
 
+  #content
+    // display: block
 
-.site-main
-	margin: 0 $size__site-sidebar 0 0
+  #primary
+    width: 100%
 
+  #main
+    +box-shadow
 
-.site-content .widget-area
-	float: right
-	overflow: hidden
-	width: $size__site-sidebar
+  #secondary
+    display: none
 
+  .widget
 
-.site-footer
-	clear: both
-	width: $size__site-main
+  @media screen and (min-width: 50em)
+    #content
+     display: flex
+
+    #primary
+      width: 75%
+
+    #main
+      margin-left: 1em
+      border-radius: 1em
+
+    .entry-header
+      border-top-left-radius: 1em
+      border-top-right-radius: 1em
+
+    .ns-post-content-wrapper
+      border-bottom-left-radius: 1em
+      border-bottom-right-radius: 1em
+
+    #secondary
+      display: block
+      background: $ns-lt-gray
+      margin: 1.5em 1em 0 1em
+      width: 25%
+      flex: 0 1 auto
+      +box-shadow
+      border-radius: 1em
