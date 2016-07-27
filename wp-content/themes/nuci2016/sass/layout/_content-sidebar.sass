@@ -1,13 +1,13 @@
 .single
 
   #content
-    // display: block
+
 
   #primary
     width: 100%
 
   #main
-    +box-shadow
+    // +box-shadow
 
   #secondary
     display: none
@@ -16,18 +16,32 @@
 
   @media screen and (min-width: 50em)
     #content
-     display: flex
+      margin-left: auto
+      margin-right: auto
+      display: flex
+      max-width: 60em
 
     #primary
       width: 75%
+
 
     #main
       margin-left: 1em
       border-radius: 1em
 
+    .post
+      +box-shadow
+      border-radius: 1em
+      // border-bottom-right-radius: 1em
+
+
     .entry-header
       border-top-left-radius: 1em
       border-top-right-radius: 1em
+      a
+        text-decoration: none
+        &:hover
+          text-decoration: underline
 
     .ns-post-content-wrapper
       border-bottom-left-radius: 1em
@@ -41,3 +55,9 @@
       flex: 0 1 auto
       +box-shadow
       border-radius: 1em
+
+.blog
+  @extend .single
+
+.archive
+  @extend .single
