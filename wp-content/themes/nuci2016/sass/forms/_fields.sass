@@ -15,3 +15,28 @@ input[type="email"]
   &:active,
   &:focus
     outline-color: $ns-lt-blue
+
+// MailChimp
+
+// Contact Form 7
+
+// fields
+.wpcf7-text
+  @extend input[type="email"]
+  width: 100% !important
+  max-width: none !important
+
+.wpcf7-textarea
+  @extend .wpcf7-text
+  height: 16em
+
+.wpcf7-submit
+  @extend .ns-green-btn
+  color: #fff
+  text-transform: uppercase
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif
+  font-weight: bold
+  +font-size(.75)
+  padding: .25em 1em
+  border: none
+  border-radius: .25em
