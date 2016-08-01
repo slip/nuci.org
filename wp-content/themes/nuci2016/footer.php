@@ -20,33 +20,33 @@
         <ul>
           <a href="/blog/"><li>Blog</li></a>
           <a href="/calendar/"><li>Calendar</li></a>
-          <a href="#"><li>Contact</li></a>
-          <a href="#"><li>Our Sponsors</li></a>
-          <a href="#"><li>Legal</li></a>
+          <a href="/contact-us/"><li>Contact</li></a>
+          <a href="/our-sponsors/"><li>Our Sponsors</li></a>
+          <a href="/legal/"><li>Legal</li></a>
         </ul>
       </div>
       <div class="footer-nav">
         <h4 class="footer-nav-header">Campaigns</h4>
         <ul>
-          <a href="#"><li>Ath Business Rocks</li></a>
+          <a href="http://athensbusinessrocks.com/"><li>Ath Business Rocks</li></a>
           <a href="#"><li>Autumn on the Hill</li></a>
           <a href="#"><li>Nuci+1 Pass</li></a>
-          <a href="#"><li>Rock'N'Raffle</li></a>
+          <a href="http://rocknraffle.com/"><li>Rock'N'Raffle</li></a>
           <a href="#"><li>The Steeple</li></a>
         </ul>
       </div>
       <div class="footer-nav">
         <h4 class="footer-nav-header">Programs</h4>
         <ul>
-          <a href="#"><li>Camp Amped</li></a>
+          <a href="/camp-amped/"><li>Camp Amped</li></a>
           <a href="/health-and-wellness/"><li>Health &amp; Wellness</li></a>
-          <a href="#"><li>Musician's Services</li></a>
+          <a href="/musicians-services/"><li>Musician's Services</li></a>
         </ul>
       </div>
       <div class="footer-nav">
         <h4 class="footer-nav-header">Shop</h4>
         <ul>
-          <a href="#"><li>Merch</li></a>
+          <a href="http://nucisspace.bigcartel.com/"><li>Merch</li></a>
           <a href="#"><li>Rewired</li></a>
           <a href="#"><li>Auction</li></a>
         </ul>
