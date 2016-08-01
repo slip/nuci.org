@@ -117,6 +117,36 @@ get_header(); ?>
         ?>
       <?php endif; ?>
 
+      <!-- camp-amped page has the most recent i am nucis post -->
+      <?php if (is_page('camp-amped')) : ?>
+        <div class="post-cards-wrapper">
+          <div class="post-cards">
+          <?php
+            $args = array(
+              'posts_per_page' => 3,
+              'order' => 'DSC',
+              'orderby' => 'date',
+              'category' => '-193, 191'
+            );
+            $postslist = get_posts($args);
+            foreach ($postslist as $post):
+              setup_postdata($post);
+          ?>
+            <div class="post-card">
+              <div class="card-image">
+                <a href="<?php the_permalink();?>"><img src="<?php if (has_post_thumbnail()) {the_post_thumbnail_url();}?>" alt=""></a>
+              </div>
+              <div class="card-copy"><h4><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
+              <?php the_excerpt();?></div>
+            </div>
+          <?php
+            endforeach;
+            wp_reset_postdata();
+          ?>
+        </div><!-- .post-cards -->
+      </div><!-- .post-cards-wrapper -->
+      <?php endif; ?>
+
     </main><!-- #main -->
   </div><!-- #primary -->
 
