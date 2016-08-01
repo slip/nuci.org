@@ -259,6 +259,9 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
+.chronosly-cal.ch-default * {
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif !important; }
+
 .ns-shadow, .media-card, .i-am-nucis-space {
   position: relative; }
 
@@ -396,6 +399,25 @@ input[type="email"], .wpcf7-text, .wpcf7-textarea {
   padding: .25em 1em;
   border: none;
   border-radius: .25em; }
+
+.wpcf7-mail-sent-ok {
+  background: #006e51;
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  color: #fff;
+  border: none !important;
+  border-radius: .25em;
+  padding: 1em !important; }
+
+.wpcf7-validation-errors {
+  background: #b93a32;
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  color: #fff;
+  border: none !important;
+  border-radius: .25em;
+  padding: 1em !important; }
+
+.wpcf7-not-valid-tip {
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif; }
 
 #give-form-1736-wrap {
   text-align: center; }
