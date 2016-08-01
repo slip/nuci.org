@@ -1058,6 +1058,10 @@ object {
 .gallery-caption {
   display: block; }
 
+.pdf-download {
+  display: inline-block;
+  margin: 0 1.5em; }
+
 .site-footer {
   color: #fff;
   background-image: -webkit-linear-gradient(rgba(40, 40, 40, 0) 0%, rgba(40, 40, 40, 0.8) 100%);
