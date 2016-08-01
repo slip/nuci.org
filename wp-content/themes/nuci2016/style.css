@@ -183,6 +183,9 @@ mark, ins {
 big {
   font-size: 125%; }
 
+strong {
+  font-weight: bold; }
+
 .site-content {
   font-size: 13.6px;
   font-size: 0.85rem;
@@ -261,6 +264,95 @@ table {
 
 .chronosly-cal.ch-default * {
   font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif !important; }
+
+.tab_container {
+  width: 90%;
+  margin: 0;
+  position: relative; }
+  .tab_container ul {
+    list-style: none;
+    margin: 0; }
+  .tab_container input, .tab_container section {
+    text-align: left;
+    border-radius: .5em;
+    border-top-left-radius: 0;
+    clear: both;
+    padding-top: 1em 0;
+    display: none; }
+  .tab_container label {
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    margin-right: .25em;
+    border-right: 1px solid #ccccc5;
+    border-top-left-radius: .25em;
+    border-top-right-radius: .25em;
+    display: block;
+    float: left;
+    padding: .5em;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background: #736f78; }
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3 {
+  display: block;
+  padding: 1em;
+  background: #ccccc5;
+  border-bottom: 2px solid #736f78; }
+
+.tab_container .tab-content p,
+.tab_container .tab-content h4,
+.tab_container .tab-content ul {
+  -webkit-animation: fadeInScale 0.7s ease-in-out;
+  animation: fadeInScale 0.7s ease-in-out; }
+
+.tab_container .tab-content h3 {
+  text-align: center; }
+
+.tab_container [id^="tab"]:checked + label {
+  background: #ccccc5;
+  color: #736f78;
+  box-shadow: inset 0 3px #547aa3; }
+
+.tab_container [id^="tab"]:checked + label .fa {
+  color: #547aa3; }
+
+label .fa {
+  font-size: 1.3em;
+  margin: 0 0.4em 0 0; }
+
+/*Media query*/
+@media only screen and (max-width: 930px) {
+  label .fa {
+    font-size: 14px; } }
+
+@media only screen and (max-width: 768px) {
+  label .fa {
+    font-size: 16px; }
+  .tab_container {
+    width: 98%; } }
+
+/*Content Animation*/
+@-webkit-keyframes fadeInScale {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+@keyframes fadeInScale {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
 
 .ns-shadow, .media-card, .i-am-nucis-space {
   position: relative; }

@@ -284,6 +284,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/elements\/_tabs.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/sass\/_tabs.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/forms\/_buttons.sass": {
 		"aP": 1,
 		"bl": 0,

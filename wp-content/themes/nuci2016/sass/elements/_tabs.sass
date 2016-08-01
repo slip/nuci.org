@@ -1,0 +1,97 @@
+
+.tab_container
+  width: 90%
+  margin: 0
+  position: relative
+  ul
+    list-style: none
+    margin: 0
+
+
+  input, section
+    text-align: left
+    border-radius: .5em
+    border-top-left-radius: 0
+    clear: both
+    padding-top: 1em 0
+    display: none
+
+  label
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif
+    margin-right: .25em
+    border-right: 1px solid $ns-gray
+    border-top-left-radius: .25em
+    border-top-right-radius: .25em
+    display: block
+    float: left
+    padding: .5em
+    color: #fff
+    cursor: pointer
+    text-decoration: none
+    text-align: center
+    background: $ns-dk-gray
+
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3
+  display: block
+  padding: 1em
+  background: $ns-gray
+  border-bottom: 2px solid $ns-dk-gray
+
+.tab_container .tab-content p,
+.tab_container .tab-content h4,
+.tab_container .tab-content ul
+  -webkit-animation: fadeInScale 0.7s ease-in-out
+  -moz-animation: fadeInScale 0.7s ease-in-out
+  animation: fadeInScale 0.7s ease-in-out
+
+.tab_container .tab-content h3
+  text-align: center
+
+
+.tab_container [id^="tab"]:checked + label
+  background: $ns-gray
+  color: $ns-dk-gray
+  box-shadow: inset 0 3px $ns-blue
+
+
+.tab_container [id^="tab"]:checked + label .fa
+  color: $ns-blue
+
+
+label .fa
+  font-size: 1.3em
+  margin: 0 0.4em 0 0
+
+
+/*Media query*/
+@media only screen and (max-width: 930px)
+
+  label .fa
+    font-size: 14px
+
+
+
+@media only screen and (max-width: 768px)
+
+  label .fa
+    font-size: 16px
+
+
+  .tab_container
+    width: 98%
+
+
+
+/*Content Animation*/
+@keyframes fadeInScale
+  0%
+    transform: scale(0.9)
+    opacity: 0
+
+
+  100%
+    transform: scale(1)
+    opacity: 1
