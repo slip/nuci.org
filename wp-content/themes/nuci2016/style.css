@@ -453,8 +453,8 @@ input[type="submit"] {
   border: none;
   border-top-right-radius: .25em;
   border-bottom-right-radius: .25em;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
   font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-size: 0.75rem;
@@ -873,7 +873,9 @@ section {
     background: #b93a32; }
   @media (min-width: 28em) {
     .section-header {
-      margin: -2em -2em 2em -2em; } }
+      margin: -2em -2em 2em -2em;
+      border-top-right-radius: 1em;
+      border-top-left-radius: 1em; } }
 
 .section-text {
   margin-left: auto;
@@ -903,6 +905,12 @@ section {
     background-color: #b93a32; }
     .full-width-bg.red h1, .full-width-bg.red h2, .full-width-bg.red h3, .full-width-bg.red p, .full-width-bg.red a {
       color: #fff; }
+  @media (min-width: 28em) {
+    .full-width-bg {
+      width: 48em;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 1em; } }
 
 .talk-to-us {
   width: 100%;
@@ -913,6 +921,12 @@ section {
     color: #fff; }
   .talk-to-us.dk-gray {
     background: #736f78; }
+  @media (min-width: 28em) {
+    .talk-to-us {
+      width: 48em;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 1em; } }
 
 .talk-to-us-content {
   margin-left: auto;
