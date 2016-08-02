@@ -1,4 +1,5 @@
-input[type="email"]
+input[type="email"],
+input[type="search"]
   position: relative
   top: 1px
   height: 3em
@@ -16,11 +17,23 @@ input[type="email"]
   &:focus
     outline-color: $ns-lt-blue
 
+// search and submit
+.search-form
+  margin: 1em auto
+
+  .search-field
+    width: 75%
+    max-width: none
+
+  .search-submit
+    @extend .textfield-btn
+    @extend .ns-green-btn
+    min-width: 5.5em
+    width: 15%
+
 // MailChimp
 
 // Contact Form 7
-
-// fields
 .wpcf7-text
   @extend input[type="email"]
   width: 100% !important
