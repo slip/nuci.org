@@ -21,7 +21,7 @@
           <a href="/blog/"><li>Blog</li></a>
           <a href="/calendar/"><li>Calendar</li></a>
           <a href="/contact-us/"><li>Contact</li></a>
-          <a href="/our-sponsors/"><li>Our Sponsors</li></a>
+          <!-- <a href="/our-sponsors/"><li>Our Sponsors</li></a> -->
           <a href="/legal/"><li>Legal</li></a>
         </ul>
       </div>
@@ -29,10 +29,10 @@
         <h4 class="footer-nav-header">Campaigns</h4>
         <ul>
           <a href="http://athensbusinessrocks.com/"><li>Ath Business Rocks</li></a>
-          <a href="#"><li>Autumn on the Hill</li></a>
-          <a href="#"><li>Nuci+1 Pass</li></a>
+          <!-- <a href="#"><li>Autumn on the Hill</li></a> -->
+          <!-- <a href="#"><li>Nuci+1 Pass</li></a> -->
           <a href="http://rocknraffle.com/"><li>Rock'N'Raffle</li></a>
-          <a href="#"><li>The Steeple</li></a>
+          <a href="https://www.indiegogo.com/projects/reconstruction-of-the-steeple--2#/"><li>The Steeple</li></a>
         </ul>
       </div>
       <div class="footer-nav">
