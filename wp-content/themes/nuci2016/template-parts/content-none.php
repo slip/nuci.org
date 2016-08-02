@@ -9,12 +9,11 @@
 
 ?>
 
-<section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'nuci2016' ); ?></h1>
-	</header><!-- .page-header -->
+	<div class="section-header">
+		<h2 class="page-title"><?php esc_html_e( 'Nothing Found', 'nuci2016' ); ?></h2>
+	</div><!-- .page-header -->
 
-	<div class="page-content">
+	<div class="section-text text-align-left">
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
@@ -34,4 +33,3 @@
 
 		endif; ?>
 	</div><!-- .page-content -->
-</section><!-- .no-results -->
