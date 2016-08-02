@@ -491,6 +491,12 @@ input[type="search"] {
     min-width: 5.5em;
     width: 15%; }
 
+#secondary section {
+  padding: 0 1em; }
+
+#search-2 > form > label > input {
+  width: auto; }
+
 .wpcf7-text, .wpcf7-textarea {
   width: 100% !important;
   max-width: none !important; }
@@ -742,7 +748,7 @@ a {
 .updated:not(.published) {
   display: none; }
 
-.single .byline, .blog .byline, .archive .byline,
+.single .byline, .blog .byline, .archive .byline, .search .byline,
 .group-blog .byline {
   display: inline; }
 
@@ -1488,43 +1494,43 @@ h4.footer-nav-header {
 .text-align-center {
   text-align: center; }
 
-.single #primary, .blog #primary, .archive #primary {
+.single #primary, .blog #primary, .archive #primary, .search #primary {
   width: 100%; }
 
-.single #secondary, .blog #secondary, .archive #secondary {
+.single #secondary, .blog #secondary, .archive #secondary, .search #secondary {
   display: none; }
 
 @media screen and (min-width: 50em) {
-  .single #content, .blog #content, .archive #content {
+  .single #content, .blog #content, .archive #content, .search #content {
     margin-left: auto;
     margin-right: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     max-width: 60em; }
-  .single #primary, .blog #primary, .archive #primary {
-    width: 75%; }
-  .single #main, .blog #main, .archive #main {
+  .single #primary, .blog #primary, .archive #primary, .search #primary {
+    width: 70%; }
+  .single #main, .blog #main, .archive #main, .search #main {
     margin-left: 1em;
     border-radius: 1em; }
-  .single .post, .blog .post, .archive .post {
+  .single .post, .blog .post, .archive .post, .search .post {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
     border-radius: 1em; }
-  .single .entry-header, .blog .entry-header, .archive .entry-header {
+  .single .entry-header, .blog .entry-header, .archive .entry-header, .search .entry-header {
     border-top-left-radius: 1em;
     border-top-right-radius: 1em; }
-    .single .entry-header a, .blog .entry-header a, .archive .entry-header a {
+    .single .entry-header a, .blog .entry-header a, .archive .entry-header a, .search .entry-header a {
       text-decoration: none; }
-      .single .entry-header a:hover, .blog .entry-header a:hover, .archive .entry-header a:hover {
+      .single .entry-header a:hover, .blog .entry-header a:hover, .archive .entry-header a:hover, .search .entry-header a:hover {
         text-decoration: underline; }
-  .single .ns-post-content-wrapper, .blog .ns-post-content-wrapper, .archive .ns-post-content-wrapper {
+  .single .ns-post-content-wrapper, .blog .ns-post-content-wrapper, .archive .ns-post-content-wrapper, .search .ns-post-content-wrapper {
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em; }
-  .single #secondary, .blog #secondary, .archive #secondary {
+  .single #secondary, .blog #secondary, .archive #secondary, .search #secondary {
     display: block;
     background: #f5f5f5;
-    margin: 1.5em 1em 0 1em;
-    width: 25%;
+    margin: 1.5em 0 0 1em;
+    width: 30%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
