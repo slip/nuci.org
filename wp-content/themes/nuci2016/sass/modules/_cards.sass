@@ -32,19 +32,32 @@
         border: solid 2px $ns-dk-gray
         +box-shadow(0px, $vertical: 2px, $blur: 5px, $color: rgba(0, 0, 0, 0.25))
 
+@media(min-width: 28em)
+  .post-card
+    width: 95%
+    max-width: 48em
+    margin-left: auto
+    margin-right: auto
+    border-radius: 1em
+
+
 @media screen and (min-width: 50em)
   // using this to give a centered max-width for the flexy cards
   .post-cards-wrapper
-    +max-width(52)
+    width: 95%
+    +max-width(48)
     margin-left: auto
     margin-right: auto
   .post-cards
-    justify-content: space-around
+    justify-content: space-between
+
 
   .post-card
     justify-content: center
     width: 30%
     border-radius: 1em
+    margin-left: 0
+    margin-right: 0
     & .card-copy
       width: 100%
 
