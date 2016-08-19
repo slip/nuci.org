@@ -4,9 +4,8 @@ article
 section
   padding: 1.5em 1em
   margin-top: 1.5em
-  // margin-bottom: 0
 
-  @media(min-width: 28em)
+  @media(min-width: $bp-tablet)
     padding: 2em 2em
 
 .section-header
@@ -22,10 +21,10 @@ section
     background: $ns-blue
   &.red
     background: $ns-red
-  @media(min-width: 28em)
+  @media(min-width: $bp-tablet)
     margin: -2em -2em 2em -2em
-    border-top-right-radius: 1em
-    border-top-left-radius: 1em
+    border-top-right-radius: .5em
+    border-top-left-radius: .5em
 
 .section-text
   margin-left: auto
@@ -36,8 +35,13 @@ section
 .full-width-bg
   width: 100%
   +box-shadow
-
   text-align: center
+
+  &.trans
+    background: $ns-lt-gray
+    @media(min-width: $bp-header)
+      background: rgba(146, 182, 213, 0.5)
+
   &.blue
     background:
       color: $ns-blue
@@ -66,15 +70,14 @@ section
     h1, h2, h3, p, a
       color: #fff
 
-  @media(min-width: 28em)
+  @media(min-width: $bp-tablet)
     width: 95%
-    max-width: 48em
+    max-width: $section-max-width
     margin-left: auto
     margin-right: auto
-    border-radius: 1em
+    border-radius: .5em
 
 // talk to us sections
-
 .talk-to-us
   width: 100%
   text-align: center
@@ -85,12 +88,12 @@ section
   &.dk-gray
     background: $ns-dk-gray
 
-  @media(min-width: 28em)
+  @media(min-width: $bp-tablet)
     width: 95%
-    max-width: 48em
+    max-width: $section-max-width
     margin-left: auto
     margin-right: auto
-    border-radius: 1em
+    border-radius: .5em
 
 .talk-to-us-content
   margin-left: auto
@@ -112,6 +115,6 @@ section
   h2
     display: inline-block
 
-@media(min-width: 28em)
+@media(min-width: $bp-tablet)
   .talk-to-us-content
     // justify-content: center

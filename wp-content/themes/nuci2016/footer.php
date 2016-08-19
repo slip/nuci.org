@@ -47,7 +47,7 @@
         <h4 class="footer-nav-header">Shop</h4>
         <ul>
           <a href="http://nucisspace.bigcartel.com/"><li>Merch</li></a>
-          <a href="#"><li>Rewired</li></a>
+          <a href="https://www.facebook.com/groups/AthensGaMusicStuffForSale/"><li>Rewired</li></a>
           <a href="#"><li>Auction</li></a>
         </ul>
       </div>

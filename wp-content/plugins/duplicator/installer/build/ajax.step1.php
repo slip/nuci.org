@@ -53,6 +53,7 @@ if (isset($_GET['dbtest']))
 	$tstDB    = ($dbFound) ? "<div class='dup-pass'>Success</div>" : "<div class='dup-fail'>Fail</div>";
 	
 	$dbvar_version = DUPX_Util::mysql_version($dbConn);
+	$dbvar_version = ($dbvar_version == 0) ? 'no connection' : $dbvar_version;
 	$dbvar_version_fail = version_compare($dbvar_version, $GLOBALS['FW_VERSION_DB']) < 0;
 	$tstCompat = ($dbvar_version_fail)
 		? "<div class='dup-notice'>This Server: [{$dbvar_version}] -- Package Server: [{$GLOBALS['FW_VERSION_DB']}]</div>" 
@@ -232,7 +233,7 @@ DUPX_ServerConfig::Reset();
 if (filesize("{$root_path}/database.sql") > 100000000) {
 	DUPX_Log::Info("\nWARNING: Database Script is larger than 100MB this may lead to PHP memory allocation issues on some budget hosts.");
 }
-$sql_file = @file_get_contents('database.sql', true);
+$sql_file = file_get_contents('database.sql', true);
 if ($sql_file == false || strlen($sql_file) < 10) {
 	$sql_file = file_get_contents('installer-data.sql', true);
 	if ($sql_file == false || strlen($sql_file) < 10) {

@@ -2,7 +2,6 @@
 
   #content
 
-
   #primary
     width: 100%
 
@@ -11,18 +10,21 @@
 
   #secondary
     display: none
+    .search-field
+      border: solid 1px $ns-gray
 
   .widget
 
-  @media screen and (min-width: 50em)
+  @media screen and (min-width: $bp-header)
     #content
       margin-left: auto
       margin-right: auto
       display: flex
-      max-width: 60em
+      width: 85vw
+      // max-width: 60em
 
     #primary
-      width: 70%
+      width: calc(100% - 20em)
 
     #main
       margin-left: 1em
@@ -50,7 +52,7 @@
       display: block
       background: $ns-lt-gray
       margin: 1.5em 0 0 1em
-      width: 30%
+      width: 18em
       flex: 0 1 auto
       +box-shadow
       border-radius: 1em
