@@ -28,11 +28,20 @@
       <div class="footer-nav">
         <h4 class="footer-nav-header">Campaigns</h4>
         <ul>
-          <a href="http://athensbusinessrocks.com/"><li>Ath Business Rocks</li></a>
+          <a href="http://athensbusinessrocks.com/"><li>Athens Business Rocks</li></a>
           <!-- <a href="#"><li>Autumn on the Hill</li></a> -->
           <!-- <a href="#"><li>Nuci+1 Pass</li></a> -->
           <a href="http://rocknraffle.com/"><li>Rock'N'Raffle</li></a>
           <a href="https://www.indiegogo.com/projects/reconstruction-of-the-steeple--2#/"><li>The Steeple</li></a>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4 class="footer-nav-header">Quick Contact</h4>
+        <ul>
+          <li><i class="icon-email"></i><a href="mailto:space@nuci.org">space@nuci.org</a></li>
+          <li><i class="icon-phone"></i>706.227.1515</li>
+          <li><i class="icon-fax"></i>706.227.1524</li>
+          <li><i class="icon-address"></i>396 Oconee Street, Athens GA</li>
         </ul>
       </div>
       <div class="footer-nav">
@@ -51,15 +60,6 @@
           <a href="#"><li>Auction</li></a>
         </ul>
       </div>
-      <div class="footer-nav">
-        <h4 class="footer-nav-header">Quick Contact</h4>
-        <ul>
-          <li><i class="icon-email"></i><a href="mailto:space@nuci.org">space@nuci.org</a></li>
-          <li><i class="icon-phone"></i>706.227.1515</li>
-          <li><i class="icon-fax"></i>706.227.1524</li>
-          <li><i class="icon-address"></i>396 Oconee Street, Athens GA</li>
-        </ul>
-      </div>
 		</div><!-- .site-info -->
     <div class="site-info">
       <div class="follow-us">
@@ -68,7 +68,9 @@
           <a href="http://www.facebook.com/nucisspace"><li class="icon-facebook">Facebook</li></a>
           <a href="http://www.twitter.com/nucisspace"><li class="icon-twitter">Twitter</li></a>
           <a href="http://www.flickr.com/photos/nucisspace"><li class="icon-flickr">Flickr</li></a>
-          <a href="http://plus.google.com/110049268214181907740/about?gl=US&hl=en-US"><li class="icon-google-plus">Google+</li></a>
+          <a href="http://www.instagram.com/nucisspace"><li class="icon-instagram">Instragram</li></a>
+          <a href="https://vimeo.com/nucisspace"><li class="icon-vimeo">Vimeo</li></a>
+          <a href="http://www.youtube.com/user/nucisspace"><li class="icon-youtube">YouTube</li></a>
         </ul>
       </div>
     </div>

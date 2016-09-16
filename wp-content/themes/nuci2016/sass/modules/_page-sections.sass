@@ -34,8 +34,13 @@ section
 
 .full-width-bg
   width: 100%
-  +box-shadow
   text-align: center
+
+  @media(max-width: $bp-tablet)
+    +box-shadow
+
+  h4
+    margin-top: .5em
 
   &.trans
     background: $ns-lt-gray
@@ -117,4 +122,12 @@ section
 
 @media(min-width: $bp-tablet)
   .talk-to-us-content
-    // justify-content: center
+    justify-content: center
+
+.two-up
+  background:
+    color: pink
+  & .full-width-bg
+    width: 45%
+    height:
+    display: inline-block

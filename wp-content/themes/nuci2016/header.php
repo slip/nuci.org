@@ -47,8 +47,8 @@ body_class();
     <div class="navbar-header">
       <!-- main nav buttons -->
       <div class="navbar-main-buttons">
-        <a class="header-main-button ns-red-btn" href="/get-help/" type="button" name="get-help-btn">Get Help</a>
-        <a class="header-main-button ns-green-btn" href="/help-us/" type="button" name="help-us-btn">Help Us</a>
+        <a class="header-main-button ns-red-btn" href="/get-help/" type="button" name="get-help-btn">Get Support</a>
+        <a class="header-main-button ns-green-btn" href="/help-us/" type="button" name="help-us-btn">Join Our Cause</a>
         <a class="header-main-button ns-blue-btn" href="/about-us/" type="button" name="about-us-btn">About Us</a>
       </div>
       <!-- hamburger menu -->

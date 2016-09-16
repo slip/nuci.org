@@ -206,8 +206,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-image: -webkit-linear-gradient(top, rgba(146, 182, 213, 0.13) 0%, rgba(0, 110, 81, 0.3) 100%);
-  background-image: linear-gradient(-180deg, rgba(146, 182, 213, 0.13) 0%, rgba(0, 110, 81, 0.3) 100%); }
+  background-color: #c3d8dd; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -345,10 +344,10 @@ label .fa {
             transform: scale(1);
     opacity: 1; } }
 
-.ns-shadow, .media-card, .i-am-nucis-space {
+.ns-shadow, .i-am-nucis-space {
   position: relative; }
 
-.ns-shadow:before, .media-card:before, .i-am-nucis-space:before, .ns-shadow:after, .media-card:after, .i-am-nucis-space:after {
+.ns-shadow:before, .i-am-nucis-space:before, .ns-shadow:after, .i-am-nucis-space:after {
   z-index: -1;
   position: absolute;
   content: "";
@@ -362,7 +361,7 @@ label .fa {
   -webkit-transform: rotate(-1deg);
   transform: rotate(-1deg); }
 
-.ns-shadow:after, .media-card:after, .i-am-nucis-space:after {
+.ns-shadow:after, .i-am-nucis-space:after {
   -webkit-transform: rotate(1deg);
   transform: rotate(1deg);
   right: 10px;
@@ -414,20 +413,13 @@ input[type="submit"] {
   margin-right: 1em; }
 
 .ns-red-btn {
-  background-image: -webkit-linear-gradient(bottom, #73251F 0%, #B93A32 65%);
-  background-image: linear-gradient(to top, #73251F 0%, #B93A32 65%);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); }
+  background-color: #b93a32; }
 
 .ns-green-btn, .search-form .search-submit, .wpcf7-submit {
-  background-image: -webkit-linear-gradient(bottom, #00402F 0%, #006E51 53%);
-  background-image: linear-gradient(to top, #00402F 0%, #006E51 53%);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); }
+  background-color: #006e51; }
 
 .ns-blue-btn, #give-form-1736 .give-btn {
-  background-image: -webkit-linear-gradient(89deg, #547AA3 24%, #31475E 100%);
-  background-image: -webkit-linear-gradient(271deg, #547AA3 24%, #31475E 100%);
-  background-image: linear-gradient(179deg, #547AA3 24%, #31475E 100%);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); }
+  background-color: #547aa3; }
 
 .navbar-toggle {
   -ms-flex-item-align: end;
@@ -490,7 +482,8 @@ input[type="search"] {
 
 .wpcf7-text, .wpcf7-textarea {
   width: 100% !important;
-  max-width: none !important; }
+  max-width: none !important;
+  border: 1px solid #ccccc5; }
 
 .wpcf7-textarea {
   height: 16em; }
@@ -525,6 +518,9 @@ input[type="search"] {
 .wpcf7-not-valid-tip {
   font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif; }
 
+.wpcf7-validates-as-email {
+  border: 1px solid #ccccc5 !important; }
+
 #give-form-1736-wrap {
   text-align: center; }
   #give-form-1736-wrap * {
@@ -539,7 +535,7 @@ input[type="search"] {
     font-size: 0.88rem; }
   @media screen and (min-width: 50em) {
     #give-form-1736-wrap {
-      margin-top: 1.5em; }
+      margin-bottom: .5em; }
       #give-form-1736-wrap h2 {
         font-size: 28px;
         font-size: 1.75rem;
@@ -582,7 +578,6 @@ input[type="search"] {
   float: none !important;
   position: relative;
   top: 1.5px;
-  width: 250px;
   max-width: 20em;
   padding: .5em 1em;
   border: none !important;
@@ -591,6 +586,9 @@ input[type="search"] {
   color: #ccccc5; }
   #give-amount:active, #give-amount:focus {
     outline-color: #92b6d5; }
+  @media screen and (min-width: 50em) {
+    #give-amount {
+      width: 15em; } }
 
 input#give-amount-text {
   padding: .5em 1em;
@@ -874,8 +872,12 @@ section {
 
 .full-width-bg {
   width: 100%;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
   text-align: center; }
+  @media (max-width: 28em) {
+    .full-width-bg {
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25); } }
+  .full-width-bg h4 {
+    margin-top: .5em; }
   .full-width-bg.trans {
     background: #f5f5f5; }
     @media (min-width: 50em) {
@@ -950,6 +952,18 @@ section {
   .talk-to-us-text h2 {
     display: inline-block; }
 
+@media (min-width: 28em) {
+  .talk-to-us-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+.two-up {
+  background-color: pink; }
+  .two-up .full-width-bg {
+    width: 45%;
+    display: inline-block; }
+
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
@@ -996,8 +1010,10 @@ section {
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25); }
+          align-items: center; }
+  @media (max-width: 28em) {
+    .post-card {
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25); } }
   .post-card .card-copy {
     width: 50%;
     text-align: center; }
@@ -1080,6 +1096,9 @@ section {
     @media (min-width: 28em) {
       .media-card .media-card-title {
         padding: 1.25em; } }
+    @media (max-width: 28em) {
+      .media-card .media-card-title {
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25); } }
 
 .i-am-nucis-space {
   padding: 0;
@@ -1260,6 +1279,7 @@ h4.footer-nav-header {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 1.5em;
   margin-bottom: .25em; }
 
 .site-info {
@@ -1305,7 +1325,7 @@ h4.footer-nav-header {
   display: table;
   table-layout: fixed; }
 
-.social-icons, .icon-facebook, .icon-twitter, .icon-flickr, .icon-google-plus {
+.social-icons, .icon-facebook, .icon-twitter, .icon-flickr, .icon-google-plus, .icon-youtube, .icon-vimeo, .icon-instagram {
   overflow: hidden;
   text-indent: -9000px;
   display: block;
@@ -1316,7 +1336,7 @@ h4.footer-nav-header {
   background-repeat: no-repeat;
   background-size: cover; }
   @media screen and (min-width: 50em) {
-    .social-icons, .icon-facebook, .icon-twitter, .icon-flickr, .icon-google-plus {
+    .social-icons, .icon-facebook, .icon-twitter, .icon-flickr, .icon-google-plus, .icon-youtube, .icon-vimeo, .icon-instagram {
       height: 3em;
       width: 3em; } }
 
@@ -1331,6 +1351,15 @@ h4.footer-nav-header {
 
 .icon-google-plus {
   background-image: url(/assets/img/icons/icon-google-plus.svg); }
+
+.icon-youtube {
+  background-image: url(/assets/img/icons/icon-youtube.svg); }
+
+.icon-vimeo {
+  background-image: url(/assets/img/icons/icon-vimeo.svg); }
+
+.icon-instagram {
+  background-image: url(/assets/img/icons/icon-instagram.svg); }
 
 .icon-crisis {
   margin-right: 1em;
@@ -1413,11 +1442,10 @@ h4.footer-nav-header {
     position: fixed;
     top: 0;
     left: 0;
-    height: 400px;
-    max-height: 400px;
+    height: 375px;
     width: 100%;
     z-index: -1;
-    background-image: url(/assets/img/headers/header-nuci-at-night.png);
+    background-image: url(/assets/img/headers/site-header-min.jpg);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat; }

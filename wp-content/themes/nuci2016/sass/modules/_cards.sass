@@ -11,7 +11,8 @@
   flex-wrap: wrap
   justify-content: space-around
   align-items: center
-  +box-shadow
+  @media(max-width: $bp-tablet)
+    +box-shadow
 
   & .card-copy
     width: 50%
@@ -68,7 +69,6 @@
           border-radius: 50%
 
 .media-card
-  @extend .ns-shadow
   padding: 0
   margin-top: 1.5em
   width: 95%
@@ -102,6 +102,8 @@
 
     @media(min-width: $bp-tablet)
       padding: 1.25em
+    @media(max-width: $bp-tablet)
+      +box-shadow
 
 .i-am-nucis-space
   @extend .ns-shadow
