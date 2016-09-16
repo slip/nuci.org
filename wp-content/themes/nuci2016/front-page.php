@@ -75,7 +75,7 @@ get_header(); ?>
               <div class="card-image">
                 <a href="<?php the_permalink();?>"><img src="<?php if (has_post_thumbnail()) {the_post_thumbnail_url();}?>" alt=""></a>
               </div>
-              <div class="card-copy"><h4><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
+              <div class="card-copy"><h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
               <?php the_excerpt();?></div>
             </div>
           <?php

@@ -7,20 +7,22 @@ h1, h2, h3, h4, h5, h6
 
 h1
   +font-size(2.074)
-  // scale down for small phones
-  @media(max-width: 350px)
-    +font-size(1.87)
 
 h2
   +font-size(1.728)
-  @media(max-width: 350px)
-    +font-size(1.52)
 
 h3
   +font-size(1.44)
-  @media(max-width: 350px)
-    +font-size(1.24)
+
 h4
   +font-size(1.2)
-  @media(max-width: 350px)
+
+@media(max-width: 22em)
+  h1
+    +font-size(1.87)
+  h2
+    +font-size(1.52)
+  h3
+    +font-size(1.24)
+  h4
     +font-size(1)

@@ -11,7 +11,8 @@
   flex-wrap: wrap
   justify-content: space-around
   align-items: center
-  +box-shadow
+  @media(max-width: $bp-tablet)
+    +box-shadow
 
   & .card-copy
     width: 50%
@@ -32,19 +33,32 @@
         border: solid 2px $ns-dk-gray
         +box-shadow(0px, $vertical: 2px, $blur: 5px, $color: rgba(0, 0, 0, 0.25))
 
-@media screen and (min-width: 50em)
+@media(min-width: $bp-tablet)
+  .post-card
+    width: 95%
+    max-width: $section-max-width
+    margin-left: auto
+    margin-right: auto
+    border-radius: 1em
+
+
+@media screen and (min-width: $bp-header)
   // using this to give a centered max-width for the flexy cards
   .post-cards-wrapper
-    +max-width(52)
+    width: 95%
+    max-width: $section-max-width
     margin-left: auto
     margin-right: auto
   .post-cards
-    justify-content: space-around
+    justify-content: space-between
+
 
   .post-card
     justify-content: center
     width: 30%
     border-radius: 1em
+    margin-left: 0
+    margin-right: 0
     & .card-copy
       width: 100%
 
@@ -55,11 +69,10 @@
           border-radius: 50%
 
 .media-card
-  @extend .ns-shadow
   padding: 0
   margin-top: 1.5em
   width: 95%
-  max-width: 48em
+  max-width: $section-max-width
   background: $ns-lt-gray
   border-radius: .5em
   position: relative
@@ -78,6 +91,8 @@
     padding: .5rem 0.5em
     background: $ns-dk-gray
     border-radius: inherit
+    border-top-left-radius: 0
+    border-top-right-radius: 0
     text-align: center
     h3, a
       color: #fff
@@ -85,8 +100,10 @@
       & :hover, & :focus
         text-decoration: underline
 
-    @media(min-width: 28em)
+    @media(min-width: $bp-tablet)
       padding: 1.25em
+    @media(max-width: $bp-tablet)
+      +box-shadow
 
 .i-am-nucis-space
   @extend .ns-shadow

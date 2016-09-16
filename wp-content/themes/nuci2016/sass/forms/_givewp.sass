@@ -6,14 +6,12 @@
 
   text-align: center
   h2
-    color: $ns-black
     +font-size(1.125)
   p
-    color: $ns-black
     +font-size(.88)
 
-  @media screen and (min-width: 50em)
-    margin-top: 1.5em
+  @media screen and (min-width: $bp-header)
+    margin-bottom: .5em
     h2
       +font-size(1.75)
       line-height: normal
@@ -30,7 +28,7 @@
   .give-currency-symbol
     display: none
 
-  .give-amount-top
+  // .give-amount-top
 
   .give-btn
     @extend .ns-blue-btn
@@ -63,7 +61,6 @@
   float: none !important
   position: relative
   top: 1.5px
-  width: 250px
   max-width: 20em
   padding: .5em 1em
   border: none !important
@@ -74,6 +71,9 @@
   &:active,
   &:focus
     outline-color: $ns-lt-blue
+
+  @media screen and (min-width: $bp-header)
+    width: 15em
 
 input#give-amount-text
   padding: .5em 1em
