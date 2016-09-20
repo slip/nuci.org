@@ -54,15 +54,20 @@
 
 
   .post-card
+    display: flex
     justify-content: center
+    align-items: flex-start
     width: 30%
     border-radius: 1em
     margin-left: 0
     margin-right: 0
-    & .card-copy
-      width: 100%
 
-    & .card-image
+    .card-copy
+      width: 100%
+      // align-self: flex-start
+      flex-grow: 2
+
+    .card-image
       a
         img
           width: calc(100vw/6.5)
@@ -98,7 +103,7 @@
       color: #fff
       text-decoration: none
       & :hover, & :focus
-        text-decoration: underline
+        color: $ns-lt-blue
 
     @media(min-width: $bp-tablet)
       padding: 1.25em
@@ -153,7 +158,7 @@
   justify-content: space-between
 
 .teammate
-  width: 32%
+  width: 40%
   margin-bottom: 1.5em
 
 .teammate-pic
@@ -168,15 +173,20 @@
 .teammate-title
   color: $ns-dk-gray
   +font-size(.55)
-  line-height: .5em
+  line-height: 1em
 
 @media (min-width: 25em)
+  .teammate
+    width: 45%
   .teammate-name
     +font-size(.88)
   .teammate-title
     +font-size(.75)
 
-@media (min-width: 35em)
+@media (min-width: $bp-header)
+  .teammate
+    width: 32%
+
   .teammate-name
     +font-size(1)
   .teammate-title

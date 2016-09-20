@@ -287,6 +287,18 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/assets\/pdf\/privacy.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/pdf\/privacy.pdf",
+		"oF": 0
+		},
+	"\/assets\/pdf\/terms-of-use.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/pdf\/terms-of-use.pdf",
+		"oF": 0
+		},
 	"\/index.php": {
 		"ft": 8192,
 		"oA": 2,

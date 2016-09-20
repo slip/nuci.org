@@ -1,17 +1,26 @@
-.navbar-header
-  margin: 1em .25em 2em .25em
-  @media(min-width: 37em)
-    margin: 2em
+.site-header
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  width: 100%
+  max-width: 56em
+  margin: 1em auto 0 auto
+  margin-left: auto
+  margin-right: auto
 
 .header-main-logo
-  width: 12rem
-  margin-bottom: 1.5rem
-  +center-block
+  width: 100%
+  text-align: center
+  margin: 0 0 .5em 0
+  img
+    width: 12em
+    margin: 0
 
 .navbar-header
-  display: flex
-  justify-content: flex-end
-  align-items: baseline
+  margin: 0em
+  @media(min-width: $bp-header)
+    // margin: 2em
 
 #header-image
   display: none
@@ -23,7 +32,6 @@
     top: 0
     left: 0
     height: 375px
-    // max-height: 700px
     width: 100%
     z-index: -1
     background:
@@ -33,13 +41,8 @@
       repeat: no-repeat
 
   .header-main-logo
-    margin-top: -3em
-    margin-left: 2em
-    margin-bottom: 0
+    width: 20%
+    margin-right: 40%
 
-  // .site-header
-  //   background:
-  //     size: cover
-  //     position: bottom center
-  //     repeat: no-repeat
-  //     image: linear-gradient(rgba(255,255,255,0.40) 0%, rgba(255,255,255,0.00) 80%)
+  .navbar-header
+    align-self: flex-start

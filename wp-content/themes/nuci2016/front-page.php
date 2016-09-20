@@ -58,6 +58,7 @@ get_header(); ?>
           endforeach;
           wp_reset_postdata();
         ?>
+        
         <div class="post-cards-wrapper">
           <div class="post-cards">
           <?php

@@ -28,11 +28,11 @@
       <div class="footer-nav">
         <h4 class="footer-nav-header">Campaigns</h4>
         <ul>
-          <a href="http://athensbusinessrocks.com/"><li>Athens Business Rocks</li></a>
+          <a href="http://athensbusinessrocks.com/" target="_blank"><li>Athens Business Rocks</li></a>
           <!-- <a href="#"><li>Autumn on the Hill</li></a> -->
           <!-- <a href="#"><li>Nuci+1 Pass</li></a> -->
-          <a href="http://rocknraffle.com/"><li>Rock'N'Raffle</li></a>
-          <a href="https://www.indiegogo.com/projects/reconstruction-of-the-steeple--2#/"><li>The Steeple</li></a>
+          <a href="http://rocknraffle.com/" target="_blank"><li>Rock'N'Raffle</li></a>
+          <a href="https://www.indiegogo.com/projects/reconstruction-of-the-steeple--2#/" target="_blank"><li>The Steeple</li></a>
         </ul>
       </div>
       <div class="footer-nav">
@@ -55,9 +55,9 @@
       <div class="footer-nav">
         <h4 class="footer-nav-header">Shop</h4>
         <ul>
-          <a href="http://nucisspace.bigcartel.com/"><li>Merch</li></a>
-          <a href="https://www.facebook.com/groups/AthensGaMusicStuffForSale/"><li>Rewired</li></a>
-          <a href="#"><li>Auction</li></a>
+          <a href="http://nucisspace.bigcartel.com/" target="_blank"><li>Merch</li></a>
+          <a href="https://www.facebook.com/groups/AthensGaMusicStuffForSale/" target="_blank"><li>Rewired</li></a>
+          <a href="http://www.ebay.com/usr/nucis-space" target="_blank"><li>Auction</li></a>
         </ul>
       </div>
 		</div><!-- .site-info -->
@@ -65,12 +65,12 @@
       <div class="follow-us">
         <h4 class="footer-nav-header">Follow Us</h4>
         <ul>
-          <a href="http://www.facebook.com/nucisspace"><li class="icon-facebook">Facebook</li></a>
-          <a href="http://www.twitter.com/nucisspace"><li class="icon-twitter">Twitter</li></a>
-          <a href="http://www.flickr.com/photos/nucisspace"><li class="icon-flickr">Flickr</li></a>
-          <a href="http://www.instagram.com/nucisspace"><li class="icon-instagram">Instragram</li></a>
-          <a href="https://vimeo.com/nucisspace"><li class="icon-vimeo">Vimeo</li></a>
-          <a href="http://www.youtube.com/user/nucisspace"><li class="icon-youtube">YouTube</li></a>
+          <a href="http://www.facebook.com/nucisspace" target="_blank"><li class="icon-facebook">Facebook</li></a>
+          <a href="http://www.twitter.com/nucisspace" target="_blank"><li class="icon-twitter">Twitter</li></a>
+          <a href="http://www.flickr.com/photos/nucisspace" target="_blank"><li class="icon-flickr">Flickr</li></a>
+          <a href="http://www.instagram.com/nucisspace" target="_blank"><li class="icon-instagram">Instragram</li></a>
+          <a href="https://vimeo.com/nucisspace" target="_blank"><li class="icon-vimeo">Vimeo</li></a>
+          <a href="http://www.youtube.com/user/nucisspace" target="_blank"><li class="icon-youtube">YouTube</li></a>
         </ul>
       </div>
     </div>
