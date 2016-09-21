@@ -14,8 +14,37 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <section class="full-width-bg lt-blue">
+        <?php echo do_shortcode("[give_form id=\"1736\" show_title=\"false\" show_goal=\"false\" show_content=\"true\" display_style=\"modal\" float_labels=\"disabled\"]"); ?>
+      </section>
+      <div class="post-cards-wrapper">
+        <div class="post-cards">
+        <?php
+          $args = array(
+            'posts_per_page' => 3,
+            'order' => 'DSC',
+            'orderby' => 'date',
+            'category' => '-193'
+          );
+          $postslist = get_posts($args);
+          foreach ($postslist as $post):
+            setup_postdata($post);
+        ?>
+          <div class="post-card">
+            <div class="card-image">
+              <a href="<?php the_permalink();?>"><img src="<?php if (has_post_thumbnail()) {the_post_thumbnail_url();}?>" alt=""></a>
+            </div>
+            <div class="card-copy"><h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+            <?php the_excerpt();?></div>
+          </div>
+        <?php
+          endforeach;
+          wp_reset_postdata();
+        ?>
+      </div><!-- .post-cards -->
+    </div><!-- .post-cards-wrapper -->
 
       <?php
       /* Start the Loop */
@@ -58,35 +87,8 @@ get_header(); ?>
           endforeach;
           wp_reset_postdata();
         ?>
-        
-        <div class="post-cards-wrapper">
-          <div class="post-cards">
-          <?php
-            $args = array(
-              'posts_per_page' => 3,
-              'order' => 'DSC',
-              'orderby' => 'date',
-              'category' => '-193'
-            );
-            $postslist = get_posts($args);
-            foreach ($postslist as $post):
-              setup_postdata($post);
-          ?>
-            <div class="post-card">
-              <div class="card-image">
-                <a href="<?php the_permalink();?>"><img src="<?php if (has_post_thumbnail()) {the_post_thumbnail_url();}?>" alt=""></a>
-              </div>
-              <div class="card-copy"><h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
-              <?php the_excerpt();?></div>
-            </div>
-          <?php
-            endforeach;
-            wp_reset_postdata();
-          ?>
-        </div><!-- .post-cards -->
-      </div><!-- .post-cards-wrapper -->
-		</main><!-- #main -->
-	</div><!-- #primary -->
+    </main><!-- #main -->
+  </div><!-- #primary -->
 
 <?php
 get_footer();

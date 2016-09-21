@@ -4156,6 +4156,12 @@
 		"oAP": "\/wp-content\/plugins\/akismet\/class.akismet-admin.php",
 		"oF": 0
 		},
+	"\/wp-content\/plugins\/akismet\/class.akismet-cli.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/akismet\/class.akismet-cli.php",
+		"oF": 0
+		},
 	"\/wp-content\/plugins\/akismet\/class.akismet-widget.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -13730,6 +13736,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/plugins\/mailchimp-for-wp\/includes\/api\/class-api.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/mailchimp-for-wp\/includes\/api\/class-connection-exception.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/mailchimp-for-wp\/includes\/api\/class-connection-exception.php",
 		"oF": 0
 		},
 	"\/wp-content\/plugins\/mailchimp-for-wp\/includes\/api\/class-exception.php": {
