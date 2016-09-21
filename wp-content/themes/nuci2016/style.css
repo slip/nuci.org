@@ -549,6 +549,7 @@ input[type="search"]::-webkit-search-results-decoration {
   #give-form-1736 .give-btn {
     color: #fff;
     position: relative;
+    top: -10px;
     height: 3em;
     margin-left: -0.5em;
     border: none;
@@ -1050,24 +1051,14 @@ section {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .post-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    width: 30%;
+    display: block;
+    text-align: center;
+    width: 31.5%;
     border-radius: 1em;
     margin-left: 0;
     margin-right: 0; }
     .post-card .card-copy {
-      width: 100%;
-      -webkit-box-flex: 2;
-          -ms-flex-positive: 2;
-              flex-grow: 2; }
+      width: 100%; }
     .post-card .card-image a img {
       width: calc(100vw/6.5);
       border-radius: 50%; } }
